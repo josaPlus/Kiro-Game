@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Pytest / Hypothesis
+.pytest_cache/
+.hypothesis/
+
+# Game save data
+data/
+
+# Kiro MCP config (contains secrets)
+.kiro/settings/mcp.json
+
+# Environment variables (contains secrets)
+.env

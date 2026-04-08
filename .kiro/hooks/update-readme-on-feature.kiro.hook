@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Auto-update README on Feature Completion",
+  "description": "After the agent stops, checks if a new feature was just implemented. If so, updates README.md by adding the feature to a 'Completed Features' section with a one-line description and today's date.",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "The agent just finished a session. Review the recent conversation and changes made. If a new feature was just implemented (e.g. a spec task was completed, a new scene or system was added), update README.md by adding or updating a '## Completed Features' section. Each entry should be a bullet point with a one-line description of the feature and today's date in YYYY-MM-DD format. If no new feature was implemented, do nothing."
+  }
+}

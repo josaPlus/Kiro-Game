@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Auto-check Scene Imports on Save",
+  "description": "When a scene file is saved, checks that it imports BaseScene from scenes.base_scene and uses self.input instead of direct pygame event access. Fixes any issues found automatically.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "scenes/*.py"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A scene file was just saved. Check the file for these two conventions:\\n1. It must import BaseScene from scenes.base_scene (not from any other path).\\n2. It must NOT access pygame input directly (e.g. pygame.event.get(), pygame.mouse.get_pos(), pygame.key.get_pressed()) — all input must go through self.input (the InputHandler instance).\\n\\nIf any violation is found, fix it automatically in the file. If everything is correct, do nothing."
+  }
+}
