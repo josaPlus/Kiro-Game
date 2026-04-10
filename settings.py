@@ -139,3 +139,78 @@ EXPLOSION_TEXT_HOLD_DURATION = 1.0     # seconds pause after animation before ga
 HUD_BAR_W        = 200    # px; max width of each meter bar
 HUD_BAR_H        = 16     # px; height of each meter bar
 HUD_BAR_MARGIN   = 8      # px; gap between bar bg and fill
+
+# ── Chemical Plant — UX Improvements ─────────────────────────────────────────
+
+# Diálogos contextuales
+DIALOG_DISPLAY_DURATION  = 2.0    # segundos que un diálogo permanece visible
+DIALOG_VERTICAL_OFFSET   = 28     # px; desplazamiento vertical para evitar solapamiento
+DIALOG_BG_ALPHA          = 180    # 0-255; opacidad del fondo del diálogo
+DIALOG_PADDING           = 8      # px; padding interno del rectángulo de fondo
+DIALOG_BORDER_RADIUS     = 6      # px; radio de esquinas redondeadas
+COLOR_DIALOG_BG          = (20, 24, 30)
+COLOR_DIALOG_TEXT        = (230, 237, 243)
+
+# Drag-and-drop
+COLOR_ZONE_DROP_HIGHLIGHT = (240, 192, 64)
+COLOR_DRAG_LINE           = (139, 148, 158)
+DRAG_LINE_SEGMENT_LEN     = 8
+DRAG_LINE_GAP_LEN         = 4
+
+# Animación de personajes
+WORKER_WALK_SPEED         = 120.0  # px/s
+WORKER_ARRIVE_THRESHOLD   = 6      # px
+WORKER_ALERT_RADIUS       = 100    # px
+COLOR_WORKER_ALERT        = (255, 80, 0)
+WORKER_ALERT_RING_RADIUS  = 22     # px
+WORKER_ALERT_RING_WIDTH   = 3      # px
+
+# ── Interactive Repair Minigame ───────────────────────────────────────────────
+
+# Panel dimensions
+MINIGAME_PANEL_W              = 560    # px; ancho del panel overlay
+MINIGAME_PANEL_H              = 400    # px; alto del panel overlay
+
+# Timer base por nivel
+MINIGAME_TIMER_EASY           = 12.0   # segundos (Nivel 1)
+MINIGAME_TIMER_MEDIUM         = 9.0    # segundos (Nivel 2)
+MINIGAME_TIMER_HARD           = 6.0    # segundos (Nivel 3)
+MINIGAME_TIMER_MAX            = 20.0   # segundos; cap máximo con bonus de workers
+
+# Worker bonus
+MINIGAME_WORKER_BONUS_SECONDS = 3.0    # segundos extra por worker en la zona
+
+# Valve step
+VALVE_CLICKS_L1               = 3      # clicks requeridos en Nivel 1
+VALVE_CLICKS_L2               = 4      # clicks requeridos en Nivel 2
+VALVE_CLICKS_L3               = 5      # clicks requeridos en Nivel 3
+VALVE_RADIUS                  = 80     # px; radio del círculo de la válvula
+VALVE_TARGET_RADIUS           = 18     # px; radio de detección de click en cada punto
+
+# Button step
+BUTTON_COUNT_L2               = 4      # número de botones en Nivel 2
+BUTTON_COUNT_L3               = 4      # número de botones en Nivel 3
+MINIGAME_BTN_W                = 52     # px; ancho de cada botón numerado
+MINIGAME_BTN_H                = 52     # px; alto de cada botón numerado
+MINIGAME_BTN_GAP              = 12     # px; separación entre botones
+
+# Cable step
+CABLE_PAIRS_L3                = 3      # número de pares de cables en Nivel 3
+CABLE_ENDPOINT_RADIUS         = 14     # px; radio de cada endpoint de cable
+CABLE_ENDPOINT_GAP            = 40     # px; separación vertical entre endpoints
+
+# Feedback
+MINIGAME_FEEDBACK_DURATION    = 0.35   # segundos que dura el flash de feedback
+
+# Colors
+COLOR_MINIGAME_BG             = (20, 26, 34)
+COLOR_MINIGAME_BORDER         = (240, 192, 64)
+COLOR_MINIGAME_CORRECT        = (60, 200, 100)
+COLOR_MINIGAME_ERROR          = (220, 60, 60)
+COLOR_MINIGAME_BONUS          = (240, 192, 64)
+COLOR_MINIGAME_TIMER_BAR      = (240, 192, 64)
+COLOR_MINIGAME_TIMER_BG       = (50, 50, 50)
+COLOR_MINIGAME_STEP_ACTIVE    = (230, 237, 243)
+COLOR_MINIGAME_STEP_DONE      = (60, 200, 100)
+COLOR_MINIGAME_VALVE_POINT    = (139, 148, 158)
+COLOR_MINIGAME_CABLE          = (139, 148, 158)
