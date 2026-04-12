@@ -1,6 +1,6 @@
 # Factory Safety Inspector
 
-A top-down factory safety simulation game built with Python and Pygame. You play as a Safety & Hygiene Coordinator inspecting a chemical plant, managing workers, sealing gas leaks, and enforcing PPE compliance.
+A top-down factory safety simulation game built with Python and Pygame. You play as a Safety & Hygiene Coordinator inspecting a chemical plant, managing workers, sealing gas leaks, and enforcing PPE compliance. **v1.0.1**
 
 ## Requirements
 
@@ -100,6 +100,8 @@ factory_safety_inspector/
 - **Interactive repair minigame** — clicking a leak opens an Among Us-style overlay with valve rotation, button sequence, and cable matching steps that scale per level. (2026-04-09)
 - **Worker zone bonuses** — workers assigned to a zone boost production rate (+20% each) and extend the repair minigame timer (+3s each). (2026-04-09)
 - **Weighted grade formula** — final grade uses safety (50%), score (30%), and time survived (20%) so idle play results in a poor grade. (2026-04-09)
+- **Pause menu (v1.0.1)** — press P in any gameplay scene to pause; includes resume, main menu, music volume slider, and mute toggle. (2026-04-12)
+- **Background music** — menu.mp3 plays on loop from the main menu with volume control via the pause screen. (2026-04-12)
 
 ## Planned
 

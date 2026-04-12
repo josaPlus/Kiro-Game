@@ -1156,6 +1156,10 @@ class ChemicalPlantScene(BaseScene):
         score_surf = font.render(f"Score: {self._score}", True, COLOR_HUD_TEXT)
         surface.blit(score_surf, score_surf.get_rect(right=SCREEN_WIDTH - 10, centery=HUD_HEIGHT // 2))
 
+        # Pause button — top right corner
+        pause_lbl = font.render("⏸ P", True, COLOR_HUD_TEXT)
+        surface.blit(pause_lbl, pause_lbl.get_rect(right=SCREEN_WIDTH - 10, top=4))
+
     def _draw_floor(self, surface) -> None:
         # Background fill
         surface.fill(COLOR_PLANT_BG)

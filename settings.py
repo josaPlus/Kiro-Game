@@ -5,7 +5,7 @@ SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 FPS = 60
 WINDOW_TITLE = "Factory Safety Inspector"
-VERSION_LABEL = "v0.1 — Alpha"
+VERSION_LABEL = "v1.0.1"
 
 # Colors
 COLOR_BG = (13, 17, 23)          # #0D1117 dark navy
@@ -214,3 +214,16 @@ COLOR_MINIGAME_STEP_ACTIVE    = (230, 237, 243)
 COLOR_MINIGAME_STEP_DONE      = (60, 200, 100)
 COLOR_MINIGAME_VALVE_POINT    = (139, 148, 158)
 COLOR_MINIGAME_CABLE          = (139, 148, 158)
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+MUSIC_MENU_PATH    = "assets/sound/menu/menu.mp3"
+MUSIC_VOLUME       = 0.5    # 0.0 – 1.0
+SFX_VOLUME         = 0.7
+
+# ── Pause Menu ────────────────────────────────────────────────────────────────
+COLOR_PAUSE_OVERLAY = (0, 0, 0)
+PAUSE_OVERLAY_ALPHA = 160
+COLOR_PAUSE_PANEL   = (20, 26, 34)
+COLOR_PAUSE_BORDER  = (240, 192, 64)
+PAUSE_PANEL_W       = 400
+PAUSE_PANEL_H       = 340
